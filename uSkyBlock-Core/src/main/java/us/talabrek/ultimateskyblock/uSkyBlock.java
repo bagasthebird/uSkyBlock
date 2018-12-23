@@ -514,7 +514,6 @@ public class uSkyBlock extends JavaPlugin implements uSkyBlockAPI, CommandManage
         if (isSkyWorld(player.getWorld())) {
             // Clear first, since the player could log out and we NEED to make sure their inventory gets cleared.
             clearPlayerInventory(player);
-            clearEntitiesNearPlayer(player);
         }
         islandLogic.clearIsland(next, new Runnable() {
             @Override
